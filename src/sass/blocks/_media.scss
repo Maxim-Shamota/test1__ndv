@@ -1,0 +1,757 @@
+@media (max-width: 1153px) {
+    .header {
+        height: 675px;
+
+        &__scroll {
+            display: none;
+        }
+    }
+
+    .main-menu {
+        width: 310px;
+        height: 675px;
+
+        &__logo {
+            img {
+                width: 170px;
+                height: 108px;
+            }
+        }
+
+        &__links {
+            padding-left: 70px;
+            padding-top: 52px;
+
+            a {
+                line-height: 34px;
+            }
+        }
+
+        &__3d {
+            padding: 10px 0 0 70px;
+
+            a {
+                padding-top: 6px;
+            }
+        }
+
+        &__tel {
+            padding: 29px 0 0 70px;
+        }
+
+        &__button {
+            width: 168px;
+            height: 40px;
+            margin: 27px 0 0 70px;
+            font-size: 12px;
+        }
+    }
+
+    .main-title {
+        left: 344px;
+        top: 396px;
+
+        &__trees {
+            width: 64px;
+            height: 43px;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 63px;
+            padding: 0px 0 0px 9px;
+            letter-spacing: 1.2px;
+        }
+
+        p {
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    .aboutUs {
+        .container {
+            max-width: 1010px;
+        }
+
+        &-banner {
+            img {
+                padding: 58px 0 0 70px;
+            }
+
+            h2 {
+                padding: 22px 0 0 70px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .gallery {
+        .container {
+            max-width: 1010px;
+        }
+
+        &-container {
+            grid-template: repeat(2, 250px)/repeat(4, 250px);
+            grid-auto-rows: 250px;
+        }
+    }
+
+    .advantage {
+        .container {
+            max-width: 1010px;
+        }
+
+        &-container {
+            justify-content: space-between;
+        }
+    }
+
+    .footer {
+        .container {
+            max-width: 1010px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutUs {
+        &-metro {
+            padding: 0 10px 38px 10px;
+        }
+
+        &-descr {
+            padding: 0 20px 90px;
+        }
+    }
+
+    .gallery {
+        .container {
+            max-width: 850px;
+        }
+
+        &-container {
+            grid-template: repeat(2, 212px)/repeat(4, 212px);
+            grid-auto-rows: 212px;
+        }
+
+        &-item {
+            span {
+                bottom: 16px;
+                left: 20px;
+                font-size: 19px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .advantage {
+        &-container {
+            padding: 0 20px 251px;
+        }
+    }
+
+    .footer {
+        padding: 56px 20px 49px;
+
+        &-right {
+            &__social {
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        display: none;
+    }
+
+    .header__ipad {
+        display: block;
+        overflow: hidden;
+
+        &-title {
+            background: #0B351D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__logo {
+                padding: 10px 0 14px 56px;
+
+                img {
+                    width: 97px;
+                    height: 62px;
+                    animation: logo_anim 4s ease-in-out infinite;
+                }
+
+                img:hover {
+                    animation-play-state: paused;
+                }
+            }
+
+            @keyframes logo_anim {
+
+                0%,
+                100% {
+                    transform: scale(1, 1);
+                }
+
+                50% {
+                    transform: scale(-1, 1);
+                }
+            }
+
+            &__descr {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .main-menu__tel {
+                    padding: 0;
+                }
+
+                .main-menu__button {
+                    margin: 0;
+                    width: 168px;
+                    height: 40px;
+                    background: #E3CEA3;
+                    outline: none;
+                    margin-left: 30px;
+                    transition: 0.5s;
+                }
+
+                .main-menu__button:hover {
+                    font-size: 14px;
+                    background: #e2a730;
+                }
+
+                .header-title__toggle {
+                    position: relative;
+                    margin: 21px 56px 25px 16px;
+                    width: 40px;
+                    height: 40px;
+                    background: #9FC460;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    span:nth-child(1) {
+                        position: absolute;
+                        top: 16px;
+                        left: 13px;
+                        width: 14px;
+                        height: 2px;
+                        background: #234934;
+                        transition: 0.2s;
+                    }
+
+                    span:nth-child(2) {
+                        position: absolute;
+                        top: 20px;
+                        left: 13px;
+                        width: 14px;
+                        height: 2px;
+                        background: #234934;
+                        transition: 0.2s;
+                    }
+
+                    span:nth-child(3) {
+                        position: absolute;
+                        top: 24px;
+                        left: 13px;
+                        width: 14px;
+                        height: 2px;
+                        background: #234934;
+                        transition: 0.2s;
+                    }
+                }
+
+                .header-title__toggle.active {
+                    background: #0B351D;
+
+                    span:nth-child(1) {
+                        transform: translateY(4px) rotate(45deg);
+                        background: #E3CEA3;
+                    }
+
+                    span:nth-child(2) {
+                        display: none;
+                    }
+
+                    span:nth-child(3) {
+                        transform: translateY(-4px) rotate(-45deg);
+                        background: #E3CEA3;
+                    }
+                }
+            }
+        }
+
+        &-main__menu {
+            display: none;
+        }
+
+        &-main__menu.active {
+            background: #0B351D;
+            width: 100%;
+            height: 434px;
+            display: flex;
+            padding-top: 87px;
+
+            nav {
+                padding: 0 0 0 56px;
+
+                ul>li>a {
+                    font-size: 15px;
+                    line-height: 38px;
+                    letter-spacing: 1px;
+                    color: #E3CEA3;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    transition: 0.5s;
+                }
+
+                ul>li>a:hover {
+                    color: #000;
+                }
+            }
+
+            .header__ipad-main__menu-right {
+                padding: 87px 56 0 16px;
+
+                .main-menu__3d {
+                    padding: 0;
+                    padding-left: 58px;
+                }
+
+                .header__ipad-descr__addr {
+                    padding: 170px 0 0 65px;
+                }
+
+                .descr__addr2 {
+                    display: none;
+                }
+
+            }
+        }
+
+        &-descr.deactive {
+            display: none;
+        }
+
+        &-descr {
+            background: url(../../img/header-bg__ipad.jpg) center center/cover no-repeat;
+            width: 100%;
+            height: 434px;
+            padding: 180px 0 0 50px;
+
+            img {
+                width: 64px;
+                height: 43px;
+            }
+
+            h1 {
+                font-size: 36px;
+                line-height: 45px;
+                color: #E3CEA3;
+                padding-top: 17px;
+            }
+
+            p {
+                font-size: 26px;
+                line-height: 31px;
+                color: #FFFFFF;
+                font-weight: 900;
+            }
+
+            span {
+                font-size: 24px;
+                line-height: 26px;
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+
+            &__addr {
+                padding-top: 17px;
+                margin-left: -20px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    padding-top: 5px;
+                }
+
+                span {
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: #9E7B56;
+                    font-weight: 900;
+                    padding-left: 8px;
+                }
+            }
+        }
+
+        &-down {
+            width: 100%;
+            height: 86px;
+            background: #0B351D;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+
+            p {
+                color: #E3CEA3;
+                font-size: 12px;
+                line-height: 15px;
+                font-weight: 700;
+            }
+
+            &__call {
+                padding-top: 17px;
+
+                p {
+                    padding-top: 7px;
+                }
+            }
+
+            &__request {
+                padding-top: 43px;
+
+                .request-call {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .aboutUs {
+        .aboutUs-metro__left {
+            display: none;
+        }
+
+        &-banner {
+            height: 249px;
+            margin-bottom: 50px;
+
+            img {
+                padding: 44px 0 0 52px;
+                width: 93px;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 30px;
+                color: #E3CEA3;
+                padding-left: 52px;
+            }
+        }
+
+        &-descr {
+            padding: 0 56px 30px 56px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+
+    .aboutUs-metro {
+        padding: 0 56px 38px 0;
+
+        &__right {
+            justify-content: space-around;
+            width: 100%;
+
+            &-item {
+                width: initial;
+            }
+        }
+    }
+
+    .gallery {
+        &-container {
+            display: grid;
+            grid-template: repeat(2, 325px) / repeat(2, 325px);
+            grid-auto-rows: 325px;
+            justify-content: center;
+
+            .gorizont1 {
+                grid-row: 1 / 2;
+                grid-column: 1 / 3;
+            }
+
+            .gorizont2 {
+                grid-row: 2 / 3;
+                grid-column: 1 / 3;
+            }
+
+            .vertical {
+                grid-row: 3 / 5;
+                grid-column: 2 / 3;
+            }
+        }
+    }
+
+    .advantage {
+        padding: 0 56px;
+        justify-content: space-between;
+
+        &-container {
+            padding-bottom: 197px;
+        }
+
+        img {
+            padding-right: 10px;
+            transform: scale(0.8);
+        }
+
+        &-item {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .footer {
+        padding: 50px 56px 49px 56px;
+
+        &-left {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-right {
+            &__social {
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: 1px;
+                padding-right: 5px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 656px) {
+    .header__ipad {
+        &-title {
+            &__logo {
+                padding: 10px 0 14px 16px;
+            }
+
+            &__descr {
+                .main-menu__tel {
+                    display: none;
+                }
+
+                .main-menu__button {
+                    width: 134px;
+                    height: 41px;
+
+                }
+
+                .main-menu__button:hover {
+                    font-size: 12px;
+                }
+
+                .header-title__toggle {
+                    margin: 24px 15px 25px 5px;
+                }
+            }
+        }
+
+        &-descr.deactive {
+            display: none;
+        }
+
+        &-descr {
+            background: url(../../img/header-bg__iphone.jpg) center center/cover no-repeat;
+            padding: 240px 0 0 38px;
+
+            h1 {
+                padding-top: 8px;
+            }
+
+            p {
+                line-height: 26px;
+            }
+
+            &__addr {
+                display: none;
+            }
+        }
+
+        &-main__menu {
+            display: none;
+        }
+
+        &-main__menu.active {
+            display: block;
+            padding: 30px 0 0 50px;
+
+            .main-menu__3d {
+                padding: 10px 0 0 50px;
+            }
+
+            .header__ipad-main__menu-right {
+                padding-top: 14px;
+
+                .descr__addr2 {
+                    display: flex;
+                    padding: 17px 0 0 27px;
+
+                    span {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #9E7B56;
+                        font-weight: 900;
+                    }
+
+                    img {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .aboutUs {
+        &-metro {
+            flex-direction: column;
+
+            &__left-iphone {
+                display: block;
+                font-size: 14px;
+                line-height: 18px;
+                color: #9E7B56;
+                font-weight: 900;
+                transform: translateX(10%);
+
+                span {
+                    padding-left: 5px;
+                }
+            }
+
+            &__right {
+                flex-direction: column;
+                align-items: normal;
+                transform: translateX(15%);
+
+                &-item {
+                    padding-top: 20px;
+
+                    img {
+                        width: 40px;
+                    }
+
+                    span:nth-child(1),
+                    span:nth-child(2) {
+                        font-size: 14px;
+                        line-height: 15px;
+                    }
+
+                    span>img {
+                        width: 16px;
+                    }
+                }
+            }
+        }
+
+        &-banner {
+            background: url(../../img/aboutUs-bg__iphone.jpg) center center/cover no-repeat;
+            height: 498px;
+
+            img {
+                padding: 293px 0 0 52px;
+            }
+        }
+
+        &-descr {
+            padding: 0 37px 30px 38px;
+        }
+    }
+
+    .gallery {
+        &-container {
+            grid-template-columns: repeat(auto-fit, 375px);
+            grid-auto-rows: 270px;
+            justify-content: space-around;
+
+            .gorizont1,
+            .gorizont2,
+            .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+
+    .advantage {
+        padding: 0 10px;
+
+        &-container {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &-item {
+            font-size: 12px;
+            padding-bottom: 40px;
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .footer {
+        padding: 39px 38px 49px 73px;
+
+        &-left {
+            display: none;
+        }
+
+        &-right {
+            flex-direction: column;
+
+            &__button {
+                margin: 25px 0;
+            }
+
+            &__text {
+                display: block;
+                font-size: 12px;
+                padding-left: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .header__ipad-main__menu.active {
+        padding: 30px 5px 0 50px;
+    }
+    .header {
+        &__ipad {
+            .main-menu__button {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .gallery {
+        &-container {
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: 320px;
+        }
+    }
+
+    .footer {
+        padding: 39px 38px 49px 34px;
+    }
+}

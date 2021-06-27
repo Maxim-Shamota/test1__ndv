@@ -1,0 +1,93 @@
+.aboutUs {
+    padding-top: 38px;
+
+    &-metro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 38px;
+
+        &__left {
+            display: flex;
+
+            img {
+                padding-top: 7px;
+            }
+
+            span {
+                padding-left: 14px;
+                font-size: 18px;
+                line-height: 23px;
+                color: #9E7B56;
+                font-weight: 700;
+            }
+            &-iphone {
+                display: none;
+            }
+        }
+
+        &__right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-item {
+                display: flex;
+                max-width: 235px;
+                font-weight: 900;
+                margin-left: 50px;
+
+                img {
+                    padding-right: 15px;
+                    padding-top: 7px;
+                }
+
+                span:nth-child(1) {
+                    font-size: 18px;
+                    color: #9E7B56;
+                    line-height: 27px;
+
+                    img {
+                        padding: 6px 0 0 3px;
+                    }
+                }
+
+                span:nth-child(2) {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &-banner {
+        background: url(../../img/aboutUs-bg.jpg) center center/cover no-repeat;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 66px;
+
+        img {
+            padding: 65px 0 0 103px;
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 55px;
+            letter-spacing: 1.1px;
+            color: #E3CEA3;
+            padding: 22px 0 0 108px;
+        }
+    }
+
+    &-descr {
+        font-size: 18px;
+        line-height: 27px;
+        color: #2D2D2D;
+        padding-bottom: 90px;
+        h3 {
+            padding-bottom: 40px;
+        }
+        p {
+            letter-spacing: 0.8px;
+        }
+    }
+}

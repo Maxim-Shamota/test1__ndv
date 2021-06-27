@@ -1,0 +1,114 @@
+.main-menu {
+    width: 350px;
+    height: 828px;
+    background: linear-gradient(360deg, rgba(227, 206, 163, 0.448) 0%, rgba(11, 53, 29, 0) 99.03%), #0B351D;
+    opacity: 0.9;
+    padding-top: 28px;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        img {
+            animation: logo_anim 4s ease-in-out infinite;
+        }
+        
+        img:hover {
+            animation-play-state: paused;
+        }
+    }
+
+    @keyframes logo_anim {
+
+        0%,
+        100% {
+            transform: scale(1, 1);
+        }
+    
+        50% {
+            transform: scale(-1, 1);
+        }
+    }
+
+    &__links {
+        padding-left: 90px;
+        padding-top: 57px;
+
+        a {
+            font-size: 15px;
+            line-height: 38px;
+            letter-spacing: 1px;
+            color: #E3CEA3;
+            text-transform: uppercase;
+            font-weight: 900;
+            transition: 0.5s;
+        }
+        a:hover {
+            color: #000;
+        }
+    }
+
+    &__3d {
+        display: grid;
+        padding: 29px 0 0 90px;
+
+        a {
+            padding-top: 12px;
+            font-size: 14px;
+            color: #9FC460;
+
+            img {
+                height: 21px;
+                width: 22px;
+            }
+
+            span {
+                padding-left: 10px;
+                line-height: 21px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__tel {
+        padding: 29px 0 0 90px;
+
+        a {
+            font-size: 22px;
+            line-height: 9px;
+            letter-spacing: 1px;
+            color: #E3CEA3;
+            font-weight: 900;
+
+            span {
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #9FC460;
+            }
+        }
+    }
+
+    &__button {
+        margin: 39px 0 0 90px;
+        width: 179px;
+        height: 50px;
+        background: #E3CEA3;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2B2B2B;
+        outline: none;
+        font-weight: 900;
+        transition: 0.5s;
+    }
+    &__button:hover {
+        font-size: 14px;
+        background: #e2a730;
+    }
+}
+
+.main-menu__ipad {
+    display: none;
+}
